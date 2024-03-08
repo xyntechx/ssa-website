@@ -1,0 +1,174 @@
+---
+import { Image } from "astro:assets";
+import logo from "../../assets/logos/ssa.svg";
+import instagram from "../../assets/socials/instagram.svg";
+import linkedin from "../../assets/socials/linkedin.svg";
+import facebook from "../../assets/socials/facebook.svg";
+import shopeeLogo from "../../assets/logos/shopee.svg";
+import numeradeLogo from "../../assets/logos/numerade.svg";
+import monkshillLogo from "../../assets/logos/monkshill.svg";
+import asucLogo from "../../assets/logos/asuc.png";
+---
+
+<footer>
+    <div class="left">
+        <Image src={logo} alt="SSA Logo" width={100} height={100} />
+        <p>
+            The Singapore Student Association (SSA) is a student organization
+            that provides a close-knit family for students in UC Berkeley who
+            are associated with or interested in the Singaporean culture.
+        </p>
+        <div class="socials">
+            <a href="https://www.instagram.com/ucberkeleyssa/" target="_blank">
+                <Image
+                    src={instagram}
+                    alt="SSA Instagram"
+                    width={20}
+                    height={20}
+                />
+            </a>
+            <a
+                href="https://www.linkedin.com/company/uc-berkeley-singapore-student-association/about/"
+                target="_blank"
+            >
+                <Image
+                    src={linkedin}
+                    alt="SSA LinkedIn"
+                    width={20}
+                    height={20}
+                />
+            </a>
+            <a href="https://www.facebook.com/ssaberkeley/" target="_blank">
+                <Image
+                    src={facebook}
+                    alt="SSA Facebook"
+                    width={20}
+                    height={20}
+                />
+            </a>
+        </div>
+    </div>
+
+    <div class="right">
+        <nav class="linksContainer">
+            <div class="links">
+                <p>Menu</p>
+                <a href="/about">About</a>
+                <a href="/leadership">Leadership</a>
+                <a href="/events">Events</a>
+            </div>
+            <div class="links">
+                <p>Students</p>
+                <a href="/join">Membership</a>
+                <a href="/join/freshmen">Freshmen</a>
+                <a href="/join/exchange">Exchange Students</a>
+            </div>
+            <div class="links">
+                <p>More</p>
+                <a href="/sponsor">Sponsor Us</a>
+                <a href="/hire">Hire Us</a>
+                <a href="/contact">Contact</a>
+            </div>
+        </nav>
+        <div class="sponsors">
+            <p>Proudly sponsored by</p>
+            <div class="sponsorLogos">
+                <Image src={shopeeLogo} alt="Shopee" width={30} />
+                <Image src={numeradeLogo} alt="Numerade" width={70} />
+                <Image src={monkshillLogo} alt="Monk's Hill" width={50} />
+                <Image src={asucLogo} alt="UC Berkeley ASUC" width={50} />
+            </div>
+        </div>
+    </div>
+</footer>
+
+<style>
+    footer {
+        width: 100%;
+        display: flex;
+        align-items: start;
+        justify-content: space-between;
+        flex-direction: row;
+        padding-top: 5rem;
+        padding-bottom: 2rem;
+    }
+
+    .left {
+        display: flex;
+        align-items: start;
+        justify-content: center;
+        flex-direction: column;
+        row-gap: 1rem;
+        width: 30%;
+        padding-left: 5rem;
+    }
+
+    .left p {
+        color: var(--ssa-gray);
+    }
+
+    .socials {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        flex-direction: row;
+        column-gap: 1rem;
+    }
+
+    .right {
+        display: flex;
+        align-items: end;
+        justify-content: center;
+        flex-direction: column;
+        row-gap: 2rem;
+        padding-right: 5rem;
+    }
+
+    .linksContainer {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        column-gap: 2rem;
+    }
+
+    .links {
+        display: flex;
+        align-items: end;
+        justify-content: center;
+        flex-direction: column;
+        row-gap: 0.5rem;
+    }
+
+    .links p {
+        font-weight: 600;
+    }
+
+    .links a {
+        transition-property: color;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 150ms;
+    }
+
+    .links a:hover {
+        color: var(--ssa-yellow);
+    }
+
+    .sponsors {
+        display: flex;
+        align-items: end;
+        justify-content: center;
+        flex-direction: column;
+        row-gap: 0.5rem;
+    }
+
+    .sponsors p {
+        color: var(--ssa-gray);
+    }
+
+    .sponsorLogos {
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        flex-direction: row;
+        column-gap: 1rem;
+    }
+</style>

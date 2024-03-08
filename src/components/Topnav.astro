@@ -1,0 +1,83 @@
+---
+import { Image } from "astro:assets";
+import logo from "../../assets/logos/ssa.svg";
+import logoNoBg from "../../assets/logos/ssa-nobg.svg";
+
+interface Props {
+    isHome: boolean;
+}
+
+const { isHome } = Astro.props;
+---
+
+<nav>
+    <a href="/" style="padding-left: 1rem;">
+        <Image
+            src={isHome ? logoNoBg : logo}
+            alt="SSA Logo"
+            width={80}
+            height={80}
+            loading="eager"
+        />
+    </a>
+    <div class="links">
+        <a href="/about" class={isHome ? "linkHome" : "link"}>About</a>
+        <a href="/leadership" class={isHome ? "linkHome" : "link"}>Leadership</a
+        >
+        <a href="/events" class={isHome ? "linkHome" : "link"}>Events</a>
+        <a href="/hire" class={isHome ? "linkHome" : "link"}>Hire Us</a>
+        <a
+            href="/join"
+            class="button"
+            style={isHome
+                ? "color: black; background-color: white;"
+                : "color: white; background-color: black;"}>Join Us</a
+        >
+    </div>
+</nav>
+
+<style>
+    nav {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0.5rem 0;
+    }
+
+    .link,
+    .linkHome {
+        transition-property: color;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 150ms;
+    }
+
+    .linkHome {
+        color: white;
+    }
+
+    .link:hover,
+    .linkHome:hover {
+        color: var(--ssa-yellow);
+    }
+
+    .links {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        column-gap: 2rem;
+        padding-right: 1rem;
+    }
+
+    .button {
+        padding: 0.5rem 1rem;
+        border-radius: 0.5rem;
+        transition-property: opacity;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 300ms;
+    }
+
+    .button:hover {
+        opacity: 0.85;
+    }
+</style>

@@ -1,0 +1,89 @@
+---
+import { Image } from "astro:assets";
+import PageLayout from "../layouts/PageLayout.astro";
+import retreatGroupHikeFa23 from "../../assets/photos/retreat-group-hike-fa23-2.jpeg";
+import cnyDumplingMaking from "../../assets/photos/cny-dumpling-making.jpeg";
+import midautumn from "../../assets/photos/midautumn.jpeg";
+---
+
+<PageLayout title="SSA Berkeley | About">
+    <h1>Welcome to SSA</h1>
+
+    <section>
+        <Image
+            src={retreatGroupHikeFa23}
+            alt="SSA Fall 2023 Retreat - Hiking at Table Mountain"
+            width={800}
+            style="border-radius: 1rem;"
+            loading="eager"
+        />
+        <p>
+            The Singapore Student Association (SSA) is a student organization
+            that provides a close-knit family for students in UC Berkeley who
+            are associated with or interested in the Singaporean culture.
+        </p>
+    </section>
+
+    <section>
+        <Image
+            src={cnyDumplingMaking}
+            alt="SSA CNY Celebration - we made dumplings!"
+            width={800}
+            style="border-radius: 1rem;"
+            loading="eager"
+        />
+        <p>
+            We do this by running numerous events throughout the year, ranging
+            from social events like Friendsgiving, to professional events like
+            company visits and graduate school talks. The picture above was
+            taken during our Lunar New Year dinner in Spring 2024 - we made (and
+            of course ate) dumplings!
+        </p>
+    </section>
+
+    <section>
+        <Image
+            src={midautumn}
+            alt="SSA Mid Autumn Festival"
+            width={800}
+            style="border-radius: 1rem;"
+            loading="eager"
+        />
+        <p>
+            We also collaborate with other culture-based student organizations
+            on campus to promote each of our own distinct cultures and heritage.
+            For example, we co-organized a Mid-Autumn Festival celebration with
+            the Malaysian Student Association at Berkeley (MASA) and the
+            Berkeley Indonesian Student Association (BISA). The picture you see
+            here is of us making lanterns during that fun-filled evening!
+        </p>
+    </section>
+
+    <section>
+        <p>
+            Needless to say, SSA is <span style="font-weight: 600;">the</span> community
+            to find wholesome, fun, and talented people to hang out with, as well
+            as to learn and strengthen your ties with the Singaporean culture!
+        </p>
+    </section>
+</PageLayout>
+
+<style>
+    h1 {
+        font-weight: 600;
+    }
+
+    section {
+        width: 800px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        row-gap: 1rem;
+        padding: 4rem 0;
+    }
+
+    section p {
+        text-align: center;
+    }
+</style>

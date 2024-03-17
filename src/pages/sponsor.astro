@@ -1,0 +1,94 @@
+---
+import { Image } from "astro:assets";
+import PageLayout from "../layouts/PageLayout.astro";
+import imdaLogo from "../../assets/logos/imda.svg";
+import joinableLogo from "../../assets/logos/joinable.svg";
+import monkshillLogo from "../../assets/logos/monkshill.svg";
+import zolveLogo from "../../assets/logos/zolve.svg";
+---
+
+<PageLayout title="SSA Berkeley | Sponsor Us">
+    <section>
+        <h1>Sponsor Us</h1>
+        <p>
+            Sponsoring SSA means enabling a fervent group of students to
+            continue to build a strong and thriving community at the heart of UC
+            Berkeley. Through partnering with us, you will also gain the
+            opportunity to leverage the talent brimming in this student
+            organization as well as the invaluable resources available on campus
+            and the broader Bay Area.
+        </p>
+        <p>
+            If you are interested in sponsoring the UC Berkeley Singapore
+            Student Association and want to learn more about our sponsorship
+            benefits, don't hesitate to contact us at <a
+                href="mailto:contactus@ssa.berkeley.edu"
+                >contactus@ssa.berkeley.edu</a
+            >
+        </p>
+    </section>
+
+    <section style="row-gap: 2rem;">
+        <h2>Our Current Sponsors</h2>
+        <Image src={imdaLogo} alt="IMDA" width={300} />
+        <Image src={joinableLogo} alt="Joinable" width={300} />
+        <Image src={monkshillLogo} alt="Monk's Hill" width={200} />
+        <Image src={zolveLogo} alt="Zolve" width={300} />
+    </section>
+</PageLayout>
+
+<style>
+    h1 {
+        font-size: 3rem;
+        font-weight: 600;
+    }
+
+    h2 {
+        font-weight: 600;
+    }
+
+    p {
+        text-align: center;
+        width: 800px;
+    }
+
+    section {
+        width: 800px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        row-gap: 1rem;
+        padding: 4rem 0;
+    }
+
+    section p {
+        text-align: left;
+        width: 100%;
+    }
+
+    section a {
+        text-decoration: underline;
+        transition-property: color;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 150ms;
+    }
+
+    section a:hover {
+        color: var(--ssa-yellow);
+    }
+
+    .button {
+        color: white;
+        background-color: black;
+        padding: 0.5rem 1rem;
+        border-radius: 0.5rem;
+        transition-property: opacity;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 300ms;
+    }
+
+    .button:hover {
+        opacity: 0.85;
+    }
+</style>

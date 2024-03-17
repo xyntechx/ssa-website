@@ -1,0 +1,89 @@
+---
+import { Image } from "astro:assets";
+import PageLayout from "../layouts/PageLayout.astro";
+import pixar from "../../assets/photos/pixar-2.jpg";
+import retreatSp24 from "../../assets/photos/retreat-sp24.jpeg";
+import retreatFa23 from "../../assets/photos/retreat-fa23.jpeg";
+import midautumn from "../../assets/photos/midautumn-group.jpeg";
+import halloween from "../../assets/photos/halloween.jpeg";
+---
+
+<PageLayout title="SSA Berkeley | About">
+    <h1>Our Recent Events</h1>
+    <p>From retreats to company visits, SSA runs many events every semester.</p>
+
+    <section>
+        <Image
+            src={pixar}
+            alt="A company visit to Pixar at Emeryville"
+            width={800}
+            style="border-radius: 1rem;"
+            loading="eager"
+        />
+        <p>A company visit to Pixar at Emeryville</p>
+    </section>
+
+    <section>
+        <Image
+            src={retreatSp24}
+            alt="A spring retreat to Yosemite"
+            width={800}
+            style="border-radius: 1rem;"
+            loading="eager"
+        />
+        <p>A spring retreat to Yosemite</p>
+    </section>
+
+    <section>
+        <Image
+            src={retreatFa23}
+            alt="A fall retreat to Blue Lake Springs"
+            width={800}
+            style="border-radius: 1rem;"
+            loading="eager"
+        />
+        <p>A fall retreat to Blue Lake Springs</p>
+    </section>
+
+    <section>
+        <Image
+            src={midautumn}
+            alt="A joint Mid-Autumn Festival with MASA and BISA"
+            width={800}
+            style="border-radius: 1rem;"
+            loading="eager"
+        />
+        <p>A joint Mid-Autumn Festival with MASA and BISA</p>
+    </section>
+
+    <section>
+        <Image
+            src={halloween}
+            alt="A halloween party at our (un)official party house"
+            width={800}
+            style="border-radius: 1rem;"
+            loading="eager"
+        />
+        <p>A halloween party at our (un)official party house</p>
+    </section>
+</PageLayout>
+
+<style>
+    h1 {
+        font-weight: 600;
+    }
+
+    section {
+        width: 800px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        row-gap: 1rem;
+        padding: 4rem 0;
+    }
+
+    section p {
+        text-align: center;
+    }
+</style>

@@ -1,0 +1,88 @@
+---
+import { Image } from "astro:assets";
+import PageLayout from "../layouts/PageLayout.astro";
+import gradPic from "../../assets/photos/grad.jpeg";
+---
+
+<PageLayout title="SSA Berkeley | Hire Us">
+    <h1>Hire Us</h1>
+    <p>
+        UC Berkeley SSA is home to some of the most intelligent, driven, and
+        hardworking individuals ever to walk the grounds of this campus.
+    </p>
+
+    <section>
+        <Image
+            src={gradPic}
+            alt="A company visit to Pixar at Emeryville"
+            width={800}
+            style="border-radius: 1rem;"
+            loading="eager"
+        />
+
+        <p>
+            Not only have we received a rock-solid foundation in elementary
+            thinking and reasoning through the world-renowned Singapore
+            education system, our members have also gained admission to some of
+            the most competitive graduate programs in Harvard, Stanford,
+            Columbia, etc. and/or worked for highly selective companies such as
+            Google, Facebook, and Lyft.
+        </p>
+
+        <p>
+            If you have any internship opportunities, job openings or roles you
+            would like to share with the members of Berkeley SSA, please send
+            the relevant details to <a href="mailto:contactus@ssa.berkeley.edu"
+                >contactus@ssa.berkeley.edu</a
+            > and we'd be glad to share it to the rest of our organization.
+        </p>
+    </section>
+
+    <a href="mailto:contactus@ssa.berkeley.edu" class="button">Contact Us</a>
+</PageLayout>
+
+<style>
+    h1 {
+        font-weight: 600;
+    }
+
+    section {
+        width: 800px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        row-gap: 1rem;
+        padding: 4rem 0;
+    }
+
+    section p {
+        text-align: left;
+        width: 100%;
+    }
+
+    section a {
+        text-decoration: underline;
+        transition-property: color;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 150ms;
+    }
+
+    section a:hover {
+        color: var(--ssa-yellow);
+    }
+
+    .button {
+        color: white;
+        background-color: black;
+        padding: 0.5rem 1rem;
+        border-radius: 0.5rem;
+        transition-property: opacity;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 300ms;
+    }
+
+    .button:hover {
+        opacity: 0.85;
+    }
+</style>

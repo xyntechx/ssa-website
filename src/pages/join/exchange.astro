@@ -1,0 +1,79 @@
+---
+import { Image } from "astro:assets";
+import PageLayout from "../../layouts/PageLayout.astro";
+import exchangePic from "../../../assets/photos/exchange-students-sp24.jpg";
+---
+
+<PageLayout title="SSA Berkeley | Freshmen">
+    <h1>Welcome to Cal</h1>
+
+    <p style="padding-top: 0.5rem;">
+        Ready to have fun during exchange? We're super excited to make that
+        happen for you here at UC Berkeley and SSA!
+    </p>
+
+    <section>
+        <Image
+            src={exchangePic}
+            alt="Exchange students at Spring 2024 retreat"
+            width={800}
+            style="border-radius: 1rem;"
+            loading="eager"
+        />
+        <p>
+            An unforgettable exchange experience is almost guaranteed for you
+            here at Cal. SSA will be honored to be a part of your fondest
+            memories in the semester or year ahead!
+        </p>
+        <p>
+            SSA organizes many events to keep you engaged during your semester
+            or year abroad here at Berkeley. Our retreats will let you explore
+            California, and our community will be great travel buddies to do the
+            things you've always wanted to do in the US! You can also look
+            forward to many networking opportunities with professionals and
+            students from Singapore and the Bay Area!
+        </p>
+        <p>
+            With so much to offer, we hope that your stint at Cal will start and
+            end on a high note, so be sure to join us!
+        </p>
+        <a
+            href="https://forms.gle/g53y9kRUbGypHuwG7"
+            target="_blank"
+            class="button"
+        >
+            Membership Form
+        </a>
+    </section>
+</PageLayout>
+
+<style>
+    h1 {
+        font-size: 3rem;
+        font-weight: 600;
+    }
+
+    section {
+        width: 800px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        row-gap: 2rem;
+        padding: 4rem 0;
+    }
+
+    .button {
+        color: white;
+        background-color: black;
+        padding: 0.5rem 1rem;
+        border-radius: 0.5rem;
+        transition-property: opacity;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 300ms;
+    }
+
+    .button:hover {
+        opacity: 0.85;
+    }
+</style>

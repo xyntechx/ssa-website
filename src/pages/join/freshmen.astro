@@ -1,0 +1,83 @@
+---
+import { Image } from "astro:assets";
+import PageLayout from "../../layouts/PageLayout.astro";
+import co27 from "../../../assets/photos/co27.jpeg";
+---
+
+<PageLayout title="SSA Berkeley | Freshmen">
+    <h1>Welcome to Cal</h1>
+
+    <p style="padding-top: 0.5rem;">
+        First of all, BIG congratulations! We're excited to have you here at UC
+        Berkeley and SSA!
+    </p>
+
+    <section>
+        <Image
+            src={co27}
+            alt="SSA Fall 2023 Retreat - Hiking at Table Mountain"
+            width={800}
+            style="border-radius: 1rem;"
+            loading="eager"
+        />
+        <p>
+            Entering college is definitely an exciting and nerve-racking
+            experience. SSA will be the community you need as you begin your
+            journey at Cal.
+        </p>
+        <p>
+            SSA organizes many events to ease your transition into college life
+            at Berkeley. Beyond meet-ups and networking events in Singapore and
+            Berkeley, we also run a family system to connect you with seniors
+            who will guide you throughout your first year here!
+        </p>
+        <p>
+            From Friendsgiving to CNY, SSA hosts a variety of socials that will
+            give you plenty opportunity for meeting other Singaporeans here at
+            Cal. You can look forward to many networking opportunities with
+            professionals and students from Singapore and the Bay Area!
+        </p>
+        <p>
+            With so much to offer, we hope that your experience at Cal will
+            start on a high note, so be sure to join us!
+        </p>
+        <a
+            href="https://forms.gle/g53y9kRUbGypHuwG7"
+            target="_blank"
+            class="button"
+        >
+            Membership Form
+        </a>
+    </section>
+</PageLayout>
+
+<style>
+    h1 {
+        font-size: 3rem;
+        font-weight: 600;
+    }
+
+    section {
+        width: 800px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        row-gap: 2rem;
+        padding: 4rem 0;
+    }
+
+    .button {
+        color: white;
+        background-color: black;
+        padding: 0.5rem 1rem;
+        border-radius: 0.5rem;
+        transition-property: opacity;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 300ms;
+    }
+
+    .button:hover {
+        opacity: 0.85;
+    }
+</style>

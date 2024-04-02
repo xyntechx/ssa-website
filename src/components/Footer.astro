@@ -79,19 +79,35 @@ import zolveLogo from "../../assets/logos/zolve.svg";
     </div>
 
     <div class="footerContentEnd">
-        <div class="left">
+        <div class="leftEnd">
             <sub>Copyright &copy; 2024 SSA Berkeley. All rights reserved.</sub>
             <sub>Website maintained by Nyx Iskandar :]</sub>
         </div>
 
-        <div class="right">
+        <div class="rightEnd">
             <div class="sponsors">
                 <sub>Proudly sponsored by</sub>
                 <div class="sponsorLogos">
-                    <Image src={imdaLogo} alt="IMDA" width={80} />
-                    <Image src={joinableLogo} alt="Joinable" width={80} />
-                    <Image src={monkshillLogo} alt="Monk's Hill" width={50} />
-                    <Image src={zolveLogo} alt="Zolve" width={50} />
+                    <Image
+                        src={imdaLogo}
+                        alt="IMDA"
+                        style="width: 100%; height: auto; max-width: 80px; min-width: 20px;"
+                    />
+                    <Image
+                        src={joinableLogo}
+                        alt="Joinable"
+                        style="width: 100%; height: auto; max-width: 80px; min-width: 20px;"
+                    />
+                    <Image
+                        src={monkshillLogo}
+                        alt="Monk's Hill"
+                        style="width: 100%; height: auto; max-width: 50px; min-width: 20px;"
+                    />
+                    <Image
+                        src={zolveLogo}
+                        alt="Zolve"
+                        style="width: 100%; height: auto; max-width: 50px; min-width: 20px;"
+                    />
                 </div>
             </div>
         </div>
@@ -120,9 +136,11 @@ import zolveLogo from "../../assets/logos/zolve.svg";
 
     .footerContentEnd {
         align-items: end;
+        padding: 1rem 0;
     }
 
-    .left {
+    .left,
+    .leftEnd {
         display: flex;
         align-items: start;
         justify-content: center;
@@ -132,8 +150,14 @@ import zolveLogo from "../../assets/logos/zolve.svg";
         padding-left: 5rem;
     }
 
+    .leftEnd {
+        row-gap: 0.5rem;
+    }
+
     .left p,
     .left sub,
+    .leftEnd p,
+    .leftEnd sub,
     .sponsors sub {
         color: var(--ssa-gray);
     }
@@ -146,7 +170,8 @@ import zolveLogo from "../../assets/logos/zolve.svg";
         column-gap: 1rem;
     }
 
-    .right {
+    .right,
+    .rightEnd {
         display: flex;
         align-items: end;
         justify-content: center;
@@ -197,5 +222,67 @@ import zolveLogo from "../../assets/logos/zolve.svg";
         justify-content: end;
         flex-direction: row;
         column-gap: 1rem;
+    }
+
+    @media (max-width: 1024px) {
+        .footerContent {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .left {
+            width: 80%;
+            padding: 0;
+        }
+
+        .right {
+            width: 80%;
+            padding: 0;
+            align-items: start;
+            text-align: left;
+        }
+
+        .linksContainer {
+            align-items: start;
+            padding: 2rem 0;
+        }
+
+        .links {
+            align-items: start;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .footerContentEnd {
+            flex-direction: column-reverse;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .leftEnd {
+            width: 80%;
+            padding: 0;
+            padding-top: 2rem;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .rightEnd {
+            width: 80%;
+            padding: 0;
+            align-items: center;
+        }
+
+        .sponsors {
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+        }
+
+        footer {
+            font-size: 0.8rem;
+        }
     }
 </style>

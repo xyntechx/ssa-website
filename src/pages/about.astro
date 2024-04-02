@@ -13,8 +13,7 @@ import midautumn from "../../assets/photos/midautumn.jpeg";
         <Image
             src={retreatGroupHikeFa23}
             alt="SSA Fall 2023 Retreat - Hiking at Table Mountain"
-            width={800}
-            style="border-radius: 1rem;"
+            style="width: 80%; height: auto; max-width: 800px; min-width: 300px; border-radius: 1rem;"
             loading="eager"
         />
         <p>
@@ -28,8 +27,7 @@ import midautumn from "../../assets/photos/midautumn.jpeg";
         <Image
             src={cnyDumplingMaking}
             alt="SSA CNY Celebration - we made dumplings!"
-            width={800}
-            style="border-radius: 1rem;"
+            style="width: 80%; height: auto; max-width: 800px; min-width: 300px; border-radius: 1rem;"
         />
         <p>
             We do this by running numerous events throughout the year, ranging
@@ -44,8 +42,7 @@ import midautumn from "../../assets/photos/midautumn.jpeg";
         <Image
             src={midautumn}
             alt="SSA Mid Autumn Festival"
-            width={800}
-            style="border-radius: 1rem;"
+            style="width: 80%; height: auto; max-width: 800px; min-width: 300px; border-radius: 1rem;"
         />
         <p>
             We also collaborate with other culture-based student organizations
@@ -70,10 +67,12 @@ import midautumn from "../../assets/photos/midautumn.jpeg";
     h1 {
         font-size: 3rem;
         font-weight: 600;
+        padding: 2rem 0;
     }
 
     section {
-        width: 800px;
+        width: 80%;
+        max-width: 800px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -84,5 +83,15 @@ import midautumn from "../../assets/photos/midautumn.jpeg";
 
     section p {
         text-align: center;
+    }
+
+    @media (max-width: 768px) {
+        h1 {
+            font-size: 2rem;
+        }
+
+        section {
+            padding: 2rem 0;
+        }
     }
 </style>

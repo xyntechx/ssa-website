@@ -45,8 +45,7 @@ import dinnerPic from "../../assets/photos/dinner.png";
         <Image
             src={pixarPic}
             alt="SSA Pixar Visit Fall 2023"
-            width={700}
-            style="border-radius: 1rem;"
+            style="width: 80%; height: auto; max-width: 700px; min-width: 300px; border-radius: 1rem;"
         />
 
         <div class="info">
@@ -61,8 +60,7 @@ import dinnerPic from "../../assets/photos/dinner.png";
             <Image
                 src={retreatGroupHikeFa23}
                 alt="SSA Fall 2023 Retreat - Hiking at Table Mountain"
-                width={500}
-                style="border-radius: 1rem;"
+                style="width: 100%; height: auto; max-width: 500px; min-width: 200px; border-radius: 1rem;"
             />
         </div>
 
@@ -70,8 +68,7 @@ import dinnerPic from "../../assets/photos/dinner.png";
             <Image
                 src={dinnerPic}
                 alt="Fun SSA dinner"
-                width={500}
-                style="border-radius: 1rem;"
+                style="width: 100%; height: auto; max-width: 500px; min-width: 200px; border-radius: 1rem;"
             />
             <div class="infotext">
                 <h2>Chiong and lepak together</h2>
@@ -200,5 +197,21 @@ import dinnerPic from "../../assets/photos/dinner.png";
 
     .button:hover {
         opacity: 0.85;
+    }
+
+    @media (max-width: 768px) {
+        .ssa h1 {
+            font-size: 3rem;
+        }
+
+        .info {
+            row-gap: 2rem;
+            flex-direction: column;
+        }
+
+        .infotext h2,
+        .infotext p {
+            text-align: center;
+        }
     }
 </style>

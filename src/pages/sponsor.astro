@@ -30,10 +30,26 @@ import zolveLogo from "../../assets/logos/zolve.svg";
 
     <section style="row-gap: 2rem;">
         <h2>Our Current Sponsors</h2>
-        <Image src={imdaLogo} alt="IMDA" width={300} />
-        <Image src={joinableLogo} alt="Joinable" width={300} />
-        <Image src={monkshillLogo} alt="Monk's Hill" width={200} />
-        <Image src={zolveLogo} alt="Zolve" width={300} />
+        <Image
+            src={imdaLogo}
+            alt="IMDA"
+            style="width: 50%; height: auto; max-width: 300px; min-width: 100px;"
+        />
+        <Image
+            src={joinableLogo}
+            alt="Joinable"
+            style="width: 50%; height: auto; max-width: 300px; min-width: 100px;"
+        />
+        <Image
+            src={monkshillLogo}
+            alt="Monk's Hill"
+            style="width: 50%; height: auto; max-width: 200px; min-width: 75px;"
+        />
+        <Image
+            src={zolveLogo}
+            alt="Zolve"
+            style="width: 50%; height: auto; max-width: 300px; min-width: 100px;"
+        />
     </section>
 </PageLayout>
 
@@ -41,6 +57,7 @@ import zolveLogo from "../../assets/logos/zolve.svg";
     h1 {
         font-size: 3rem;
         font-weight: 600;
+        padding: 2rem 0;
     }
 
     h2 {
@@ -49,11 +66,13 @@ import zolveLogo from "../../assets/logos/zolve.svg";
 
     p {
         text-align: center;
-        width: 800px;
+        width: 100%;
+        max-width: 800px;
     }
 
     section {
-        width: 800px;
+        width: 80%;
+        max-width: 800px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -90,5 +109,15 @@ import zolveLogo from "../../assets/logos/zolve.svg";
 
     .button:hover {
         opacity: 0.85;
+    }
+
+    @media (max-width: 768px) {
+        h1 {
+            font-size: 2rem;
+        }
+
+        section {
+            padding: 2rem 0;
+        }
     }
 </style>

@@ -7,7 +7,7 @@ import co27 from "../../../assets/photos/co27.jpeg";
 <PageLayout title="SSA Berkeley | Freshmen">
     <h1>Welcome to Cal</h1>
 
-    <p style="padding-top: 0.5rem;">
+    <p style="padding-top: 0.5rem; width: 80%; text-align: center;">
         First of all, BIG congratulations! We're excited to have you here at UC
         Berkeley and SSA!
     </p>
@@ -16,8 +16,7 @@ import co27 from "../../../assets/photos/co27.jpeg";
         <Image
             src={co27}
             alt="Class of 2027 at Spring 2024 retreat"
-            width={800}
-            style="border-radius: 1rem;"
+            style="width: 80%; height: auto; max-width: 800px; min-width: 300px; border-radius: 1rem;"
             loading="eager"
         />
         <p>
@@ -55,10 +54,12 @@ import co27 from "../../../assets/photos/co27.jpeg";
     h1 {
         font-size: 3rem;
         font-weight: 600;
+        padding: 2rem 0;
     }
 
     section {
-        width: 800px;
+        width: 80%;
+        max-width: 800px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -79,5 +80,15 @@ import co27 from "../../../assets/photos/co27.jpeg";
 
     .button:hover {
         opacity: 0.85;
+    }
+
+    @media (max-width: 768px) {
+        h1 {
+            font-size: 2rem;
+        }
+
+        section {
+            padding: 2rem 0;
+        }
     }
 </style>

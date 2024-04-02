@@ -24,8 +24,7 @@ import retreatSp24 from "../../../assets/photos/retreat-sp24-fun.jpeg";
         <Image
             src={retreatSp24}
             alt="Us having fun at Yosemite for Spring 2024 retreat"
-            width={500}
-            style="border-radius: 1rem;"
+            style="width: 100%; height: auto; max-width: 500px; min-width: 200px; border-radius: 1rem;"
             loading="eager"
         />
     </section>
@@ -108,7 +107,8 @@ import retreatSp24 from "../../../assets/photos/retreat-sp24-fun.jpeg";
     }
 
     .header div {
-        width: 500px;
+        width: 100%;
+        max-width: 500px;
         display: flex;
         align-items: start;
         justify-content: center;
@@ -167,5 +167,37 @@ import retreatSp24 from "../../../assets/photos/retreat-sp24-fun.jpeg";
     .card .desc {
         color: var(--ssa-gray);
         font-style: italic;
+    }
+
+    @media (max-width: 768px) {
+        h1 {
+            font-size: 2rem;
+        }
+
+        .header {
+            padding: 2rem 0;
+            row-gap: 2rem;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .header div {
+            align-items: center;
+        }
+
+        .header div h1,
+        .header div p {
+            text-align: center;
+        }
+
+        .cardContainer {
+            width: 100%;
+            padding: 2rem 0;
+            display: grid;
+            grid-template-columns: repeat(1, minmax(0, 1fr));
+            column-gap: 2rem;
+            row-gap: 1rem;
+        }
     }
 </style>

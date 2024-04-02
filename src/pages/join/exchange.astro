@@ -4,10 +4,10 @@ import PageLayout from "../../layouts/PageLayout.astro";
 import exchangePic from "../../../assets/photos/exchange-students-sp24.jpg";
 ---
 
-<PageLayout title="SSA Berkeley | Freshmen">
+<PageLayout title="SSA Berkeley | Exchange Students">
     <h1>Welcome to Cal</h1>
 
-    <p style="padding-top: 0.5rem;">
+    <p style="padding-top: 0.5rem; width: 80%; text-align: center;">
         Ready to have fun during exchange? We're super excited to make that
         happen for you here at UC Berkeley and SSA!
     </p>
@@ -16,8 +16,7 @@ import exchangePic from "../../../assets/photos/exchange-students-sp24.jpg";
         <Image
             src={exchangePic}
             alt="Exchange students at Spring 2024 retreat"
-            width={800}
-            style="border-radius: 1rem;"
+            style="width: 80%; height: auto; max-width: 800px; min-width: 300px; border-radius: 1rem;"
             loading="eager"
         />
         <p>
@@ -51,10 +50,12 @@ import exchangePic from "../../../assets/photos/exchange-students-sp24.jpg";
     h1 {
         font-size: 3rem;
         font-weight: 600;
+        padding: 2rem 0;
     }
 
     section {
-        width: 800px;
+        width: 80%;
+        max-width: 800px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -75,5 +76,15 @@ import exchangePic from "../../../assets/photos/exchange-students-sp24.jpg";
 
     .button:hover {
         opacity: 0.85;
+    }
+
+    @media (max-width: 768px) {
+        h1 {
+            font-size: 2rem;
+        }
+
+        section {
+            padding: 2rem 0;
+        }
     }
 </style>

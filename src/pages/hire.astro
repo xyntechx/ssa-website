@@ -6,7 +6,8 @@ import gradPic from "../../assets/photos/grad.jpeg";
 
 <PageLayout title="SSA Berkeley | Hire Us">
     <h1>Hire Us</h1>
-    <p>
+
+    <p style="padding-top: 0.5rem; width: 80%; text-align: center;">
         UC Berkeley SSA is home to some of the most intelligent, driven, and
         hardworking individuals ever to walk the grounds of this campus.
     </p>
@@ -15,8 +16,7 @@ import gradPic from "../../assets/photos/grad.jpeg";
         <Image
             src={gradPic}
             alt="A company visit to Pixar at Emeryville"
-            width={800}
-            style="border-radius: 1rem;"
+            style="width: 80%; height: auto; max-width: 800px; min-width: 300px; border-radius: 1rem;"
             loading="eager"
         />
 
@@ -45,20 +45,23 @@ import gradPic from "../../assets/photos/grad.jpeg";
     h1 {
         font-size: 3rem;
         font-weight: 600;
+        padding: 2rem 0;
     }
 
     p {
         text-align: center;
-        width: 800px;
+        width: 80%;
+        max-width: 800px;
     }
 
     section {
-        width: 800px;
+        width: 80%;
+        max-width: 800px;
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        row-gap: 1rem;
+        row-gap: 2rem;
         padding: 4rem 0;
     }
 
@@ -90,5 +93,15 @@ import gradPic from "../../assets/photos/grad.jpeg";
 
     .button:hover {
         opacity: 0.85;
+    }
+
+    @media (max-width: 768px) {
+        h1 {
+            font-size: 2rem;
+        }
+
+        section {
+            padding: 2rem 0;
+        }
     }
 </style>

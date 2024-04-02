@@ -1,1 +1,674 @@
-<!-- TODO: Finish the top + alumni EXCO but current EXCO abouts should be coming soon -->
+---
+import { Image } from "astro:assets";
+import PageLayout from "../layouts/PageLayout.astro";
+import co27 from "../../assets/photos/co27.jpeg";
+import aadil from "../../assets/exco/aadil.jpg";
+import nyx from "../../assets/exco/nyx.jpg";
+import shawn from "../../assets/exco/shawn.jpg";
+import ice from "../../assets/exco/ice.jpg";
+import kenny from "../../assets/exco/kenny.jpg";
+import ethan from "../../assets/exco/ethan.jpg";
+import sarrah from "../../assets/exco/sarrah.jpg";
+import yinqi from "../../assets/exco/yinqi.jpg";
+---
+
+<PageLayout title="SSA Berkeley | Leadership">
+    <section class="header">
+        <div>
+            <h1>Our Executive Committee</h1>
+            <p>
+                As leaders of the organization, the Executive Committee (EXCO)
+                is fully committed to foster a welcoming, inclusive, supportive,
+                and happy SSA community!
+            </p>
+        </div>
+        <!-- TODO: Replace with photoshoot group pic -->
+        <Image
+            src={co27}
+            alt="SSA EXCO 2024-25"
+            width={500}
+            style="border-radius: 1rem;"
+            loading="eager"
+        />
+    </section>
+
+    <section class="currEXCO">
+        <div class="profile">
+            <Image
+                src={aadil}
+                alt="Aadil Jamari"
+                width={400}
+                style="border-radius: 1rem;"
+            />
+            <div class="data">
+                <h1>Aadil Jamari</h1>
+                <h2>President</h2>
+            </div>
+            <p>
+                Aadil always has the tea, and is always willing to spill if you
+                ask. When he's not spilling it, you can find him exploring new
+                foods in Berkeley or trying his best at what he calls "singing".
+                Aadil is also an aspiring trilingual: he can speak English,
+                Malay and is currently learning Mandarin Chinese at Berkeley!
+                Unfortunately, his hottest take in Cal is that bubble tea is
+                severely overrated. He would much rather drink the cans of Milo
+                he has stockpiled instead.
+            </p>
+        </div>
+
+        <div class="profile">
+            <Image
+                src={nyx}
+                alt="Nyx Iskandar"
+                width={400}
+                style="border-radius: 1rem;"
+            />
+            <div class="data">
+                <h1>Nyx Iskandar</h1>
+                <h2>Vice President</h2>
+            </div>
+            <p>
+                Nyx aspires to be Tony Stark, minus the playboy stuff ;D. She
+                loves to code cool and impactful projects for the community, one
+                of them being this very website! To compensate for all the
+                sitting down, she plays volleyball and boulders, so you'll see
+                her a lot at RSF and Benchmark Climbing (protip: don't go to
+                Mosaic). She's also a STRONG proponent of physical notebooks
+                over iPads and laptops (that's her way of reconnecting with
+                nature, at least the processed version of it oops).
+            </p>
+        </div>
+
+        <div class="profile">
+            <Image
+                src={shawn}
+                alt="Shawn Goh"
+                width={400}
+                style="border-radius: 1rem;"
+            />
+            <div class="data">
+                <h1>Shawn Goh</h1>
+                <h2>Treasurer</h2>
+            </div>
+            <p>
+                Shawn loves everything outdoors (esp the beach), sports, and
+                failing to plan stuff. If you want to talk about random trivia
+                or the environment (or just escape sweaty CS/DS/Econ talk), feel
+                free to reach out. Shawn is a pro at doing nothing but
+                unfortunately struggles to inspire others to do the same. If you
+                ever bump into him on campus, feel special, because he is a
+                super-rare pokemon!
+            </p>
+        </div>
+
+        <div class="profile">
+            <Image
+                src={ice}
+                alt="Ice Kulruchakorn"
+                width={400}
+                style="border-radius: 1rem;"
+            />
+            <div class="data">
+                <h1>Ice Kulruchakorn</h1>
+                <h2>Head of Events & Publicity</h2>
+            </div>
+            <p>
+                Ice will tell you that she served in NS upon the first 10
+                minutes of meeting you (no one knows if she actually did). If
+                you see her on campus, she's probably speedwalking to class or
+                appreciating the pretty California sunset. She's always down to
+                talk about award-winning movies, the political state of the
+                world, or why New York is better than SF.
+            </p>
+        </div>
+
+        <div class="profile">
+            <Image
+                src={kenny}
+                alt="Kenny Wongchamcharoen"
+                width={400}
+                style="border-radius: 1rem;"
+            />
+            <div class="data">
+                <h1>Kenny Wongchamcharoen</h1>
+                <h2>Head of External</h2>
+            </div>
+            <p>
+                Kenny is an adventurous soul who loves nothing more than
+                travelling to new places and hiking: whether it's narrowly
+                escaping a fall off an Oregon cliff or an unexpected dash away
+                from trouble on the Chicago 'L' station at night. When he's not
+                out exploring, you can find him belting out tunes with his a
+                cappella group and hitting the tennis courts (though he has lost
+                to just about everyone). Kenny's love for spicy laksa is almost
+                as much as his notoriously low alcohol tolerance.
+            </p>
+        </div>
+
+        <div class="profile">
+            <Image
+                src={ethan}
+                alt="Ethan Lau"
+                width={400}
+                style="border-radius: 1rem;"
+            />
+            <div class="data">
+                <h1>Ethan Lau</h1>
+                <h2>Deputy Head of Events & Publicity</h2>
+            </div>
+            <p>
+                Ethan is always down for spontaneous trips anywhere. Being
+                permanently nocturnal (as a result of a permanent state of
+                procrastination), you will always find him at any of Berkeley's
+                many eating places that are still open at 2 in the morning. Hit
+                him up if you want to talk 🙂
+            </p>
+        </div>
+
+        <div class="profile">
+            <Image
+                src={sarrah}
+                alt="Sarrah Rose"
+                width={400}
+                style="border-radius: 1rem;"
+            />
+            <div class="data">
+                <h1>Sarrah Rose</h1>
+                <h2>Deputy Head of External</h2>
+            </div>
+            <p>
+                Touching grass is a struggle for Sarrah but she tries her best
+                to do so on the regular! Sarrah really enjoys exploring the
+                Californian outdoors, dance parties, and attempting not to fall
+                off bouldering walls due to a dearth of upper body strength. She
+                will also love you if you are <span style="font-weight:800"
+                    >#biopilled</span
+                >. Don't be afraid to say hi!
+            </p>
+        </div>
+
+        <div class="profile">
+            <Image
+                src={yinqi}
+                alt="Yi Yinqi"
+                width={400}
+                style="border-radius: 1rem;"
+            />
+            <div class="data">
+                <h1>Yi Yinqi</h1>
+                <h2>Deputy Head of External</h2>
+            </div>
+            <p>
+                Yinqi is a pro at procrastination: she has perfected the art of
+                avoiding work until the eleventh hour and is always seen
+                navigating through homework in panic before its deadline. Yinqi
+                thrives in her cozy indoor haven and is often found savoring
+                boba with friends. If you want an ego boost in any sports, Yinqi
+                is your go-to challenger!
+            </p>
+        </div>
+    </section>
+
+    <div class="badge-container">
+        <div class="badge">
+            <p>AY 2023-24</p>
+        </div>
+    </div>
+
+    <section class="pastEXCO">
+        <div class="profile">
+            <h1>Xi Wen Han</h1>
+            <p>President</p>
+        </div>
+        <div class="profile">
+            <h1>Loh Yih Hang (Apollo)</h1>
+            <p>Vice President</p>
+        </div>
+        <div class="profile">
+            <h1>Dylan Tay</h1>
+            <p>Secretary</p>
+        </div>
+        <div class="profile">
+            <h1>Zhao Jia Hong (Tyler)</h1>
+            <p>Treasurer</p>
+        </div>
+        <div class="profile">
+            <h1>Denyse Chan</h1>
+            <p>Events Coordinator</p>
+        </div>
+        <div class="profile">
+            <h1>Elden Yap</h1>
+            <p>Events Coordinator</p>
+        </div>
+        <div class="profile">
+            <h1>Nicole Hong</h1>
+            <p>Events Coordinator</p>
+        </div>
+        <div class="profile">
+            <h1>Amanda Leong</h1>
+            <p>External Coordinator</p>
+        </div>
+        <div class="profile">
+            <h1>Tan Xuan En</h1>
+            <p>External Coordinator</p>
+        </div>
+        <div class="profile">
+            <h1>Javan Leong</h1>
+            <p>External Coordinator</p>
+        </div>
+        <div class="profile">
+            <h1>Michael Ng</h1>
+            <p>Business Chair</p>
+        </div>
+        <div class="profile">
+            <h1>Josephine Chow</h1>
+            <p>Publicity Chair</p>
+        </div>
+    </section>
+
+    <div class="badge-container">
+        <div class="badge">
+            <p>AY 2022-23</p>
+        </div>
+    </div>
+
+    <section class="pastEXCO">
+        <div class="profile">
+            <h1>Lee Shi Hao</h1>
+            <p>President</p>
+        </div>
+        <div class="profile">
+            <h1>Zoey Liew</h1>
+            <p>Vice President</p>
+        </div>
+        <div class="profile">
+            <h1>Ellen Wu</h1>
+            <p>Secretary</p>
+        </div>
+        <div class="profile">
+            <h1>Yuan Li</h1>
+            <p>Treasurer</p>
+        </div>
+        <div class="profile">
+            <h1>Burberry Roberts</h1>
+            <p>Events Coordinator</p>
+        </div>
+        <div class="profile">
+            <h1>Daven Lim</h1>
+            <p>Events Coordinator</p>
+        </div>
+        <div class="profile">
+            <h1>Harrison (Sin Yuen) Lee</h1>
+            <p>Events Coordinator</p>
+        </div>
+        <div class="profile">
+            <h1>Bryan Sow</h1>
+            <p>External Coordinator</p>
+        </div>
+        <div class="profile">
+            <h1>Yun Zheng Wee</h1>
+            <p>External Coordinator</p>
+        </div>
+        <div class="profile">
+            <h1>Jayna Kai En Wu</h1>
+            <p>External Coordinator</p>
+        </div>
+    </section>
+
+    <div class="badge-container">
+        <div class="badge">
+            <p>AY 2021-22</p>
+        </div>
+    </div>
+
+    <section class="pastEXCO">
+        <div class="profile">
+            <h1>Howzhi Yong</h1>
+            <p>President</p>
+        </div>
+        <div class="profile">
+            <h1>Joellene Yap</h1>
+            <p>Vice President</p>
+        </div>
+        <div class="profile">
+            <h1>Andre Dumont</h1>
+            <p>Secretary</p>
+        </div>
+        <div class="profile">
+            <h1>Angeline Lee</h1>
+            <p>Treasurer</p>
+        </div>
+        <div class="profile">
+            <h1>Ernest Goh</h1>
+            <p>Events Coordinator</p>
+        </div>
+        <div class="profile">
+            <h1>Michelle Chang</h1>
+            <p>Events Coordinator</p>
+        </div>
+        <div class="profile">
+            <h1>Maia Lu</h1>
+            <p>External Coordinator</p>
+        </div>
+        <div class="profile">
+            <h1>Shannon Or</h1>
+            <p>External Coordinator</p>
+        </div>
+        <div class="profile">
+            <h1>Alphonsus Yong</h1>
+            <p>External Coordinator</p>
+        </div>
+        <div class="profile">
+            <h1>Saloni Mohapatra</h1>
+            <p>External Coordinator</p>
+        </div>
+    </section>
+
+    <div class="badge-container">
+        <div class="badge">
+            <p>AY 2020-21</p>
+        </div>
+    </div>
+
+    <section class="pastEXCO">
+        <div class="profile">
+            <h1>Vanessa Lim</h1>
+            <p>President</p>
+        </div>
+        <div class="profile">
+            <h1>Shin Ning Chan</h1>
+            <p>Vice President</p>
+        </div>
+        <div class="profile">
+            <h1>Aboli</h1>
+            <p>Secretary</p>
+        </div>
+        <div class="profile">
+            <h1>Lincoln Too</h1>
+            <p>Treasurer</p>
+        </div>
+        <div class="profile">
+            <h1>Michael Leong</h1>
+            <p>Events Coordinator</p>
+        </div>
+        <div class="profile">
+            <h1>Lulu Zhang</h1>
+            <p>Events Coordinator</p>
+        </div>
+        <div class="profile">
+            <h1>Chelsia Low</h1>
+            <p>External Coordinator</p>
+        </div>
+        <div class="profile">
+            <h1>Athena Leong</h1>
+            <p>External Coordinator</p>
+        </div>
+        <div class="profile">
+            <h1>Tara Menon</h1>
+            <p>Social Chair</p>
+        </div>
+        <div class="profile">
+            <h1>Persis Gan</h1>
+            <p>Social Chair</p>
+        </div>
+    </section>
+
+    <div class="badge-container">
+        <div class="badge">
+            <p>AY 2019-20</p>
+        </div>
+    </div>
+
+    <section class="pastEXCO">
+        <div class="profile">
+            <h1>Adriel Tan</h1>
+            <p>President</p>
+        </div>
+        <div class="profile">
+            <h1>Ashley Yip</h1>
+            <p>Vice President</p>
+        </div>
+        <div class="profile">
+            <h1>Luna Luo</h1>
+            <p>Secretary</p>
+        </div>
+        <div class="profile">
+            <h1>Jiong Han</h1>
+            <p>Treasurer</p>
+        </div>
+        <div class="profile">
+            <h1>Jenny Chen</h1>
+            <p>Events Director</p>
+        </div>
+        <div class="profile">
+            <h1>Rachel Ng</h1>
+            <p>Events Director</p>
+        </div>
+        <div class="profile">
+            <h1>Will Ko</h1>
+            <p>External Director</p>
+        </div>
+        <div class="profile">
+            <h1>Chris Ko</h1>
+            <p>External Director</p>
+        </div>
+        <div class="profile">
+            <h1>Jerry Lai</h1>
+            <p>External Director</p>
+        </div>
+        <div class="profile">
+            <h1>Kylene Tsai</h1>
+            <p>Social Chair</p>
+        </div>
+    </section>
+
+    <div class="badge-container">
+        <div class="badge">
+            <p>AY 2018-19</p>
+        </div>
+    </div>
+
+    <section class="pastEXCO">
+        <div class="profile">
+            <h1>Lim Mingjun (MJ)</h1>
+            <p>President</p>
+        </div>
+        <div class="profile">
+            <h1>Raphael Chew</h1>
+            <p>Vice President</p>
+        </div>
+        <div class="profile">
+            <h1>Tommy Poa</h1>
+            <p>Secretary</p>
+        </div>
+        <div class="profile">
+            <h1>Kawin S.</h1>
+            <p>Treasurer</p>
+        </div>
+        <div class="profile">
+            <h1>Elaine Yeo</h1>
+            <p>Events Director</p>
+        </div>
+        <div class="profile">
+            <h1>Yash Chainani</h1>
+            <p>Events Director</p>
+        </div>
+        <div class="profile">
+            <h1>Janelle Lee</h1>
+            <p>External Director</p>
+        </div>
+        <div class="profile">
+            <h1>Deng Fang Shuo</h1>
+            <p>Tech/External Director</p>
+        </div>
+        <div class="profile">
+            <h1>Marcel Tan</h1>
+            <p>Social Chair</p>
+        </div>
+    </section>
+
+    <div class="badge-container">
+        <div class="badge">
+            <p>AY 2017-18</p>
+        </div>
+    </div>
+
+    <section class="pastEXCO">
+        <div class="profile">
+            <h1>Wen Rui Liau (Ray)</h1>
+            <p>President/Tech Director</p>
+        </div>
+        <div class="profile">
+            <h1>Kate Tan</h1>
+            <p>Vice President</p>
+        </div>
+        <div class="profile">
+            <h1>Eunice Tan Hui Sian</h1>
+            <p>Secretary</p>
+        </div>
+        <div class="profile">
+            <h1>Chinmoy Saayujya</h1>
+            <p>Treasurer/Publicity Director</p>
+        </div>
+        <div class="profile">
+            <h1>Crystal Lee</h1>
+            <p>Events Director</p>
+        </div>
+        <div class="profile">
+            <h1>Lee Dao Ming</h1>
+            <p>Events Director</p>
+        </div>
+        <div class="profile">
+            <h1>Kartikye Mittal</h1>
+            <p>Social Chair</p>
+        </div>
+    </section>
+
+    <div class="badge-container">
+        <div class="badge">
+            <p>AY 2016-17</p>
+        </div>
+    </div>
+
+    <section class="pastEXCO">
+        <div class="profile">
+            <h1>Leon Sim</h1>
+            <p>President</p>
+        </div>
+        <div class="profile">
+            <h1>Ong Sheng Siong</h1>
+            <p>Vice President</p>
+        </div>
+        <div class="profile">
+            <h1>Ong Xin Suen</h1>
+            <p>Secretary</p>
+        </div>
+        <div class="profile">
+            <h1>Saurabh Malani</h1>
+            <p>Treasurer</p>
+        </div>
+        <div class="profile">
+            <h1>Vivian Li</h1>
+            <p>Publicity Director</p>
+        </div>
+        <div class="profile">
+            <h1>Christie Koay</h1>
+            <p>Events Director</p>
+        </div>
+        <div class="profile">
+            <h1>Vanessa Ng</h1>
+            <p>"Mascot"</p>
+        </div>
+    </section>
+</PageLayout>
+
+<style>
+    h1 {
+        font-size: 3rem;
+        font-weight: 600;
+        text-align: left;
+    }
+
+    .header {
+        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+        row-gap: 1rem;
+        column-gap: 1rem;
+        padding: 4rem 0;
+    }
+
+    .header div {
+        width: 500px;
+        display: flex;
+        align-items: start;
+        justify-content: center;
+        flex-direction: column;
+        row-gap: 1rem;
+    }
+
+    .badge-container {
+        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        padding-top: 2rem;
+        padding-bottom: 1rem;
+    }
+
+    .badge {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0.5rem;
+        border: 1px black solid;
+        border-radius: 0.5rem;
+        font-size: 0.8rem;
+    }
+
+    .currEXCO,
+    .pastEXCO {
+        width: 80%;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        row-gap: 4rem;
+        column-gap: 4rem;
+        align-items: start;
+    }
+
+    .pastEXCO {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        row-gap: 1rem;
+        column-gap: 1rem;
+    }
+
+    .profile {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        row-gap: 1rem;
+    }
+
+    .pastEXCO .profile {
+        row-gap: 0;
+    }
+
+    .profile .data {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .profile h1,
+    .profile h2 {
+        font-size: 1rem;
+    }
+
+    .profile p {
+        color: var(--ssa-gray);
+    }
+</style>

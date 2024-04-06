@@ -13,6 +13,14 @@ import retreatSp24 from "../../../assets/photos/retreat-sp24-fun.jpeg";
                 faculty, and anyone affiliated to UC Berkeley - to join SSA and
                 become our member.
             </p>
+            <div class="linkContainer">
+                <a href="/join/freshmen" class="button-light">
+                    Freshmen &rarr;
+                </a>
+                <a href="/join/exchange" class="button-light">
+                    Exchange Students &rarr;
+                </a>
+            </div>
             <a
                 href="https://forms.gle/g53y9kRUbGypHuwG7"
                 target="_blank"
@@ -116,6 +124,15 @@ import retreatSp24 from "../../../assets/photos/retreat-sp24-fun.jpeg";
         row-gap: 1rem;
     }
 
+    .header div .linkContainer {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        flex-direction: row;
+        width: 100%;
+        column-gap: 1rem;
+    }
+
     .button {
         color: white;
         background-color: black;
@@ -128,6 +145,21 @@ import retreatSp24 from "../../../assets/photos/retreat-sp24-fun.jpeg";
 
     .button:hover {
         opacity: 0.85;
+    }
+
+    .button-light {
+        color: black;
+        background-color: white;
+        border: 1px solid black;
+        padding: 0.5rem 1rem;
+        border-radius: 0.5rem;
+        transition-property: border-color;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 300ms;
+    }
+
+    .button-light:hover {
+        border-color: var(--ssa-yellow);
     }
 
     .content h2,
@@ -198,6 +230,10 @@ import retreatSp24 from "../../../assets/photos/retreat-sp24-fun.jpeg";
             grid-template-columns: repeat(1, minmax(0, 1fr));
             column-gap: 2rem;
             row-gap: 1rem;
+        }
+
+        .header div .linkContainer {
+            justify-content: center;
         }
     }
 </style>

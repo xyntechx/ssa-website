@@ -1,10 +1,11 @@
 ---
 import { Image } from "astro:assets";
 import PageLayout from "../layouts/PageLayout.astro";
-import imdaLogo from "../../assets/logos/imda.svg";
-import joinableLogo from "../../assets/logos/joinable.svg";
-import monkshillLogo from "../../assets/logos/monkshill.svg";
-import zolveLogo from "../../assets/logos/zolve.svg";
+// import imdaLogo from "../../assets/logos/imda.svg";
+// import joinableLogo from "../../assets/logos/joinable.svg";
+// import monkshillLogo from "../../assets/logos/monkshill.svg";
+// import zolveLogo from "../../assets/logos/zolve.svg";
+import exco from "../../assets/exco/team-doe.jpg";
 ---
 
 <PageLayout title="SSA Berkeley | Sponsor Us">
@@ -30,7 +31,20 @@ import zolveLogo from "../../assets/logos/zolve.svg";
 
     <section style="row-gap: 2rem;">
         <h2>Our Current Sponsors</h2>
+        <p style="text-align: center;">
+            We are establishing our partnerships for Fall 2024 and Spring 2025.
+            Please contact us at <a href="mailto:contactus@ssa.berkeley.edu"
+                >contactus@ssa.berkeley.edu</a
+            > if you are interested in partnering with us!
+        </p>
+
         <Image
+            src={exco}
+            alt="SSA EXCO 2024-25"
+            style="width: 80%; height: auto; max-width: 800px; min-width: 300px; border-radius: 1rem;"
+            loading="eager"
+        />
+        <!-- <Image
             src={imdaLogo}
             alt="IMDA"
             style="width: 50%; height: auto; max-width: 300px; min-width: 100px;"
@@ -49,7 +63,7 @@ import zolveLogo from "../../assets/logos/zolve.svg";
             src={zolveLogo}
             alt="Zolve"
             style="width: 50%; height: auto; max-width: 300px; min-width: 100px;"
-        />
+        /> -->
     </section>
 </PageLayout>
 

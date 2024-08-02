@@ -4,10 +4,10 @@ import logo from "../../assets/logos/ssa.svg";
 import instagram from "../../assets/socials/instagram.svg";
 import linkedin from "../../assets/socials/linkedin.svg";
 import facebook from "../../assets/socials/facebook.svg";
-import imdaLogo from "../../assets/logos/imda.svg";
-import joinableLogo from "../../assets/logos/joinable.svg";
-import monkshillLogo from "../../assets/logos/monkshill.svg";
-import zolveLogo from "../../assets/logos/zolve.svg";
+// import imdaLogo from "../../assets/logos/imda.svg";
+// import joinableLogo from "../../assets/logos/joinable.svg";
+// import monkshillLogo from "../../assets/logos/monkshill.svg";
+// import zolveLogo from "../../assets/logos/zolve.svg";
 ---
 
 <footer>
@@ -86,6 +86,16 @@ import zolveLogo from "../../assets/logos/zolve.svg";
 
         <div class="rightEnd">
             <div class="sponsors">
+                <sub style="width: 70%"
+                    >We're accepting sponsorships for Fall 2024 and Spring 2025!
+                    Check out our <a href="/sponsor">Sponsor Us</a> page for more
+                    info!</sub
+                >
+            </div>
+        </div>
+
+        <!-- <div class="rightEnd">
+            <div class="sponsors">
                 <sub>Proudly sponsored by</sub>
                 <div class="sponsorLogos">
                     <Image
@@ -110,7 +120,7 @@ import zolveLogo from "../../assets/logos/zolve.svg";
                     />
                 </div>
             </div>
-        </div>
+        </div> -->
     </div>
 </footer>
 
@@ -198,13 +208,20 @@ import zolveLogo from "../../assets/logos/zolve.svg";
         font-weight: 600;
     }
 
-    .links a {
+    .links a,
+    .sponsors a {
         transition-property: color;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
         transition-duration: 150ms;
     }
 
-    .links a:hover {
+    .sponsors a {
+        color: var(--ssa-gray);
+        text-decoration: underline;
+    }
+
+    .links a:hover,
+    .sponsors a:hover {
         color: var(--ssa-yellow);
     }
 

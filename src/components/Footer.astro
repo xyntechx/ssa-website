@@ -81,7 +81,11 @@ import facebook from "../../assets/socials/facebook.svg";
     <div class="footerContentEnd">
         <div class="leftEnd">
             <sub>Copyright &copy; 2024 SSA Berkeley. All rights reserved.</sub>
-            <sub>Website maintained by Nyx Iskandar :]</sub>
+            <sub
+                >Website maintained by <a href="https://xyntechx.com"
+                    >Nyx Iskandar</a
+                > :]</sub
+            >
         </div>
 
         <div class="rightEnd">
@@ -209,19 +213,22 @@ import facebook from "../../assets/socials/facebook.svg";
     }
 
     .links a,
-    .sponsors a {
+    .sponsors a,
+    .leftEnd a {
         transition-property: color;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
         transition-duration: 150ms;
     }
 
-    .sponsors a {
+    .sponsors a,
+    .leftEnd a {
         color: var(--ssa-gray);
         text-decoration: underline;
     }
 
     .links a:hover,
-    .sponsors a:hover {
+    .sponsors a:hover,
+    .leftEnd a:hover {
         color: var(--ssa-yellow);
     }
 

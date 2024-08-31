@@ -41,13 +41,13 @@ import retreatSp24 from "../../../assets/photos/retreat-sp24-fun.jpeg";
         <h2>What's in it for you?</h2>
         <p>+ Discounted rates for our exciting semesterly retreats</p>
         <p>
-            + The SSA family system and regular socials catering to any
+            + The SSA big-little system and regular socials catering to any
             hobby/interest (e.g. picnics, volleyball games, dinners, movie
             nights)
         </p>
         <p>
             + Exclusive networking opportunities with US- and Singapore-based
-            companies, schools, and authorities
+            organizations and companies
         </p>
         <p>+ A welcoming community and life-long friends in SSA</p>
     </section>
@@ -233,6 +233,15 @@ import retreatSp24 from "../../../assets/photos/retreat-sp24-fun.jpeg";
         }
 
         .header div .linkContainer {
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    @media (max-width: 475px) {
+        .header div .linkContainer {
+            flex-direction: column;
+            align-items: center;
             justify-content: center;
         }
     }

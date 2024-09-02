@@ -3,7 +3,7 @@ import { Image } from "astro:assets";
 import PageLayout from "../layouts/PageLayout.astro";
 import pixar from "../../assets/photos/pixar-2.jpg";
 import retreatSp24 from "../../assets/photos/retreat-sp24-wide.jpg";
-import retreatFa23 from "../../assets/photos/retreat-fa23.jpeg";
+import retreatFa24 from "../../assets/photos/retreat-fa24.jpeg";
 import midautumn from "../../assets/photos/midautumn-group.jpeg";
 import halloween from "../../assets/photos/halloween.jpeg";
 import banquet from "../../assets/photos/ssa-banquet-2024.jpeg";
@@ -15,7 +15,15 @@ import banquet from "../../assets/photos/ssa-banquet-2024.jpeg";
         From retreats to company visits, SSA runs many events every semester.
     </p>
 
-    <!-- TODO: 2024 banquet -->
+    <section>
+        <Image
+            src={retreatFa24}
+            alt="Our Fall 2024 retreat to Shasta Lake"
+            style="width: 100%; height: auto; max-width: 800px; min-width: 300px; border-radius: 1rem;"
+        />
+        <p>Our Fall 2024 retreat to Shasta Lake</p>
+    </section>
+
     <section>
         <Image
             src={banquet}
@@ -63,15 +71,6 @@ import banquet from "../../assets/photos/ssa-banquet-2024.jpeg";
             style="width: 100%; height: auto; max-width: 800px; min-width: 300px; border-radius: 1rem;"
         />
         <p>A joint Mid-Autumn Festival with MASA and BISA</p>
-    </section>
-
-    <section>
-        <Image
-            src={retreatFa23}
-            alt="A fall retreat to Blue Lake Springs"
-            style="width: 100%; height: auto; max-width: 800px; min-width: 300px; border-radius: 1rem;"
-        />
-        <p>A fall retreat to Blue Lake Springs</p>
     </section>
 </PageLayout>
 

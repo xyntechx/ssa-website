@@ -1,11 +1,10 @@
 ---
 import { Image } from "astro:assets";
 import PageLayout from "../layouts/PageLayout.astro";
-// import imdaLogo from "../../assets/logos/imda.svg";
-// import joinableLogo from "../../assets/logos/joinable.svg";
-// import monkshillLogo from "../../assets/logos/monkshill.svg";
-// import zolveLogo from "../../assets/logos/zolve.svg";
-import exco from "../../assets/exco/team-doe.jpg";
+import imdaLogo from "../../assets/logos/imda.svg";
+import joinableLogo from "../../assets/logos/joinable.svg";
+import dukenusLogo from "../../assets/logos/dukenus.svg";
+import sqLogo from "../../assets/logos/sq.svg";
 ---
 
 <PageLayout title="SSA Berkeley | Sponsor Us">
@@ -39,12 +38,6 @@ import exco from "../../assets/exco/team-doe.jpg";
         </p>
 
         <Image
-            src={exco}
-            alt="SSA EXCO 2024-25"
-            style="width: 80%; height: auto; max-width: 800px; min-width: 300px; border-radius: 1rem;"
-            loading="eager"
-        />
-        <!-- <Image
             src={imdaLogo}
             alt="IMDA"
             style="width: 50%; height: auto; max-width: 300px; min-width: 100px;"
@@ -55,15 +48,15 @@ import exco from "../../assets/exco/team-doe.jpg";
             style="width: 50%; height: auto; max-width: 300px; min-width: 100px;"
         />
         <Image
-            src={monkshillLogo}
-            alt="Monk's Hill"
-            style="width: 50%; height: auto; max-width: 200px; min-width: 75px;"
+            src={dukenusLogo}
+            alt="Duke-NUS"
+            style="width: 50%; height: auto; max-width: 300px; min-width: 100px;"
         />
         <Image
-            src={zolveLogo}
-            alt="Zolve"
+            src={sqLogo}
+            alt="Singapore Airlines"
             style="width: 50%; height: auto; max-width: 300px; min-width: 100px;"
-        /> -->
+        />
     </section>
 </PageLayout>
 
